@@ -1,0 +1,25 @@
+@if(show){
+<div class="div-style"></div>
+}
+<input type="button" style = "margin-top: 10px;" [value]="show?'Hide Div':'Show Div'" (click)="show = !show ">
+
+<div class="div-style" [style.backgroundColor] = "bgColor" style="margin-top: 10px;"></div>
+<input type="button" style="margin-top: 10px;" value="Toggle Color" (click)="bgColor=bgColor=='yellow'?'green':'yellow'">
+
+@if(firstInput===secondInput && firstInput!==''){
+<div class="div-style" style="margin-top: 10px; background-color: aqua;"></div>
+}
+
+<input [(ngModel)]="firstInput" type="text" style="display: block; margin-top: 10px;">
+<input [(ngModel)]="secondInput" type="text" style="margin-top: 10px;">
+
+<div class="div-style" style="margin-top: 10px; background-color:gainsboro; color: black;">
+    {{selectedField}}
+</div>
+<select [(ngModel)]="selectedField" style="margin-top: 10px;">
+    <optgroup>
+        <option>CSE</option>
+        <option>CSE AI/ML</option>
+        <option>AI/DS</option>
+    </optgroup>
+</select>

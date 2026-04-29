@@ -1,0 +1,102 @@
+it is JS library made by meta to build a fast and interactive user interfaces.
+It is SPA. ex- Insta, Facebook
+
+why do we use react?
+problem with JS?
+- Full page reload.
+- complex dom manipulation.
+- hard to manage large apps.
+
+Update only part and use resuable components.
+
+@)Virtual DOM - react create copy of real dom. for manipulation. when data changes react updates virtual DOM.
+update only changed part in dom.
+
+- High performance.
+
+How we create project in React.
+two ways
+ 1.npx create react-app <app_name>
+ 2.npm create vite @letest <app_name>
+
+Activity:  diff angular and react market hype 
+
+why react created.
+
+Vite:fast build tool. npm run dev - start server
+
+JSX = Java Script + XML it allowes to write HTML code in js.
+const element = <h1>Hello React</h1>
+
+JSX Rules:
+    Must Return Single Parent
+    Use scope brackts for JS
+
+components is heart of react.
+Functional Component in react
+ex:function <function_name>Student() {return <h1></h1>} 
+
+Use Component:
+    function app { return <> 
+        <Student/>
+     </> }
+
+Props: Data Passes from parent to child.
+function <function_name>Student() {return props.name} 
+function app { return <> 
+        <Student {name="Atharv"}/>
+     </> }
+Student name="Atharv"
+
+Activity:
+    What is components types of components.
+    - A component in React is a reusable piece of UI (User Interface).
+
+    where we use components in react.
+    - We use components to:
+        - Build UI in small reusable parts
+        - Separate logic (modular code)
+        - Improve readability and maintainability
+
+    with two exmaples.
+    - Functional Components
+        Simple JavaScript functions
+        Use hooks (like useState, useEffect)
+
+    - Class Components
+        ES6 classes
+        Use lifecycle methods
+
+    What is prop?
+    - Props (Properties) are used to pass data from one component to another.
+      Usually from parent → child
+    
+    why we use props?
+    - To make components dynamic
+      To pass data (like name, age, etc.)
+      To reuse the same component with different values
+
+    types of props?
+    1. Simple Props (Normal Data)
+        String, number, boolean
+    2. Complex Props
+        Object, Array, Function
+    
+    with two exmaples.
+   1.function Student(props) {
+        return <h3>Name: {props.name}</h3>;
+        }
+
+    <Student name="Atharv" />
+
+   2.function Student(props) {
+    return(
+            <div>
+                <h3>Name: {props.name}</h3>
+                <p>Age: {props.age}</p>
+            </div>
+        );
+    }
+
+    <Student name="Atharv" age={21} />
+

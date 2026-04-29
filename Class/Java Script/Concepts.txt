@@ -1,0 +1,82 @@
+Chapters:
+	1.JS
+	2.Node JS
+	3.Express JS
+	4.Angular TS
+	5.React JS
+	6.SQL
+
+Roadmap:
+
+HTML,CSS
+   |
+   V			.net   express
+   JS                |	     
+(Node.Js)		      V
+   |
+   V       ->  API  <-  mongo
+  DOM
+   |
+   V
+ React/Angular
+
+Questions:
+what is javaScript?
+   - Scripting lang used to develop web apps frontend and backend.
+
+what is Node Js ?
+   - Is a type of server which helps in running js code outside the browser.
+
+Diff let and const and var ?
+   - let allows redeclaration and reassignnment of variable. but const not.
+
+Data Types
+
+-- Primitive Data types
+
+1.Number
+2.BigInt
+3.String
+4.Boolean
+5.symbol
+6.Undefined
+7.Null
+ 
+-- Non primitive Data types
+1.Object
+
+How to declare variables in JS ?
+- using let,var,const
+
+1.let:
+   let is used to declare variable in js which value can be reassigned and redeclared.
+   ex- let a=10
+
+2.var:
+   var is used to declare variable in js same as let but problem with scope so not used in modern js.
+   ex- var a=10
+
+3.const:
+   const is used to declare variable in js which value can't be reassigned and redeclared.
+   ex- const pi=3.14
+
+-- let vs var:
+
+   # Var is not block scoped hence:
+      var a=10
+      {
+         var a=20
+      }
+      console.log(a)
+      expected is 10 but gives 20.
+
+   # let is block scoped means value only remains in block scope
+      let a=100
+      {
+         let a=500
+         console.log(a) // here we get 500 becoz block scoped  
+      }
+      console.log(a)
+      here as expected we get a=100
+
+

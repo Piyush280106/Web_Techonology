@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <div class="row">
+    @for (stud of studList; track $index) {
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow">
+          <h5>{{ stud.name }}</h5>
+          <p>Age: {{ stud.age }}</p>
+
+          <span class="badge bg-primary py-2">
+            {{ getCourseName(stud.courseId) }}
+          </span>
+        </div>
+      </div>
+    }
+  </div>
+</div>

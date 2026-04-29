@@ -1,0 +1,18 @@
+<p>Student Data</p>
+<div *ngIf = "showStudent">
+<h5>Name:{{fname}}</h5>
+<h5>Age:{{age}}</h5>
+<h5>Course:{{course}}</h5>
+<input [(ngModel)] = "fname">
+<br>
+<br>
+<input [(ngModel)] = "age">
+<br>
+<br>
+<input [(ngModel)] = "course">
+<br>
+<br>
+<input type="button" value="Click to Update" (click)="changeName()"/>
+</div>
+<br>
+<input type="button" [value]="showStudent?'Hide Student':'Show Student'" name="btnValue" (click) = "showUI()">

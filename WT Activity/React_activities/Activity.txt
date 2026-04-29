@@ -1,0 +1,142 @@
+1. Activity: Understand Types of Components
+-->
+React components are reusable building blocks of a UI.
+Types of Components
+a. Functional Components
+Simple JavaScript functions.
+Return JSX (HTML-like code).
+Easy to write and commonly used.
+function Welcome() {
+  return <h1>Hello Student!</h1>;
+}
+export default Welcome;
+
+b. Class Components
+ES6 classes that extend React.Component.
+Can use state and lifecycle methods.
+import React, { Component } from 'react';
+
+class Welcome extends Component {
+  render() {
+    return <h1>Hello Student!</h1>;
+  }
+}
+export default Welcome;
+Difference
+Functional Component	Class Component
+Simpler	                 More complex
+Uses Hooks	             Uses lifecycle methods
+Modern approach          Older approach
+
+2. Activity: Understand Props
+-->
+Props (Properties) are used to pass data from parent component to child component.
+Example:
+Child Component
+function Student(props){
+ return <h2>Name: {props.name}</h2>;
+}
+export default Student;
+
+Parent Component
+import Student from './Student';
+
+function App(){
+ return(
+   <div>
+      <Student name="Divya"/>
+      <Student name="Rahul"/>
+   </div>
+ );
+}
+export default App;
+Output:
+Name: Divya
+Name: Rahul
+
+Props are:
+Read-only
+Used for data passing
+Cannot be modified by child
+
+3. Activity: Understand State Concept with 2 Examples
+-->
+State stores data that can change in a component.
+Example 1: Counter App
+import React, {useState} from 'react';
+function Counter(){
+const [count,setCount]=useState(0);
+return(
+<div>
+<h2>Count: {count}</h2>
+<button onClick={()=>setCount(count+1)}>
+Increase
+</button>
+</div>
+);
+}
+export default Counter;
+Output:
+Clicking button increases count.
+
+Example 2: Toggle Text
+import React, {useState} from 'react';
+function Toggle(){
+const [show,setShow]=useState(true);
+return(
+<div>
+<button onClick={()=>setShow(!show)}>
+Toggle
+</button>
+{show && <h2>Welcome React</h2>}
+</div>
+);
+}
+export default Toggle;
+Output:
+Button hides/shows text.
+
+4. Activity: Understand Hooks Concept
+-->
+Hooks are functions that allow functional components to use React features like state and lifecycle.
+Common hooks:
+a. useState
+Used for state management.
+
+import {useState} from 'react';
+function Demo(){
+const [name,setName]=useState("Divya");
+return(
+<div>
+<h2>{name}</h2>
+<button onClick={()=>setName("React")}>
+Change
+</button>
+</div>
+);
+}
+b. useEffect
+Used for side effects like API calls.
+
+import {useEffect} from 'react';
+function Demo(){
+useEffect(()=>{
+console.log("Component Loaded");
+},[]);
+return <h2>Hello</h2>;
+}
+c.useRef
+Used to access DOM elements.
+
+import {useRef} from 'react';
+function Demo(){
+const inputRef=useRef();
+return(
+<div>
+<input ref={inputRef}/>
+<button onClick={()=>inputRef.current.focus()}>
+Focus
+</button>
+</div>
+);
+}

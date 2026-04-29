@@ -1,0 +1,19 @@
+<div class="container card my-3 p-3">
+    <h3 class="my-1">Fill Student Info</h3>
+    <form (ngSubmit) = "addStudent()">
+
+        <div class="form-group">
+            <label  for="studentName">Student Name</label>
+            <input [(ngModel)]="name" name = "name" type="text" class="form-control" id="studentName" placeholder="Enter Student Name:">
+        </div>
+        <div  class="form-group">
+            <label for="studentAge">Student Age</label>
+            <input [(ngModel)]="age" name = "age" type="number" class="form-control" id="studentAge" placeholder="Enter Student Age:">
+        </div>
+        <div class="form-group">
+            <label for="studentCourse">Student Course</label>
+            <input [(ngModel)]="course" name = "course" type="text" class="form-control" id="studentCourse" placeholder="Enter Student Course:">
+        </div>
+        <button type="submit" class="btn btn-primary my-2">Submit</button>
+    </form>
+</div>

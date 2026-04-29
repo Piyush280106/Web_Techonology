@@ -1,0 +1,79 @@
+1.	Difference between package.json and package-lock.json
+-->  
+ package.json
+   Main project file
+   Contains project details, scripts, and dependencies
+   Uses version ranges (e.g., ^4.18.2)
+   Example:
+   "dependencies": {
+  "express": "^4.18.2"
+    }
+ package-lock.json
+   Auto-generated file
+   Stores exact versions of installed packages
+   Ensures same setup on all systems
+   "express": {
+  "version": "4.18.2"
+   }
+package.json defines dependencies, while package-lock.json locks exact versions.
+
+2.	Difference between Dev dependencies and dependencies
+-->
+Dependencies--
+Required to run the application
+Installed using: npm install <package>
+
+Dev Dependencies--
+Used only during development (testing, tools)
+Installed using: npm install <package> --save-dev
+
+Dependencies are needed in production, while devDependencies are only for development.
+3.	routes creation and use js in that
+-->  Routes define how a server responds to client requests based on URL and HTTP method.
+ex:
+const express = require('express');
+const app = express();
+// GET route
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+// POST route
+app.post('/data', (req, res) => {
+  res.send('Data received');
+});
+
+// Start server
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
+
+app.get() → Handles GET request (fetch data)
+app.post() → Handles POST request (send data)
+req → Client request
+res → Server response
+
+4.	types of HTTP methods GET, PUT, POST, DELETE
+-->
+HTTP methods are used to perform different operations on server resources.
+1.GET
+Used to retrieve data from the server
+Does not change data
+app.get('/users', (req, res) => {
+  res.send('Fetch users');
+});
+2.POST
+Used to send or create new data
+app.post('/users', (req, res) => {
+  res.send('User created');
+});
+3.PUT
+Used to update existing data
+app.put('/users/:id', (req, res) => {
+  res.send('User updated');
+});
+4.DELETE
+Used to remove data
+app.delete('/users/:id', (req, res) => {
+  res.send('User deleted');
+});

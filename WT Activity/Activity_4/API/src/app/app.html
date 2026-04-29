@@ -1,0 +1,13 @@
+<h1>User API Data</h1>
+
+<div *ngIf="loading">
+Loading...
+</div>
+
+<div *ngIf="!loading">
+<div *ngFor="let user of users">
+<h3>{{user.name}}</h3>
+<p>{{user.email}}</p>
+<hr>
+</div>
+</div>

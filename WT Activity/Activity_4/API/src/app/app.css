@@ -1,0 +1,20 @@
+.container{
+text-align:center;
+font-family:Arial;
+margin-top:30px;
+}
+
+.spinner{
+font-size:24px;
+font-weight:bold;
+margin:30px;
+}
+
+.card{
+border:1px solid gray;
+padding:20px;
+margin:15px auto;
+width:350px;
+border-radius:10px;
+box-shadow:0 2px 6px gray;
+}

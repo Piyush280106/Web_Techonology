@@ -1,0 +1,125 @@
+angular - is a type script based froentend framework developed by google.
+it helps us build a single page application.(SPA)
+
+SPA?
+where the page does not fully reload when navigation btn diff views.
+
+Tools:
+    1.Node JS
+    2.npm
+    3.Angular CLI
+
+CLI - To create and manage Angular apps.
+
+Q)
+1.How to create angular project.
+ 1.check for node js is installed.
+ 2.install Angular CLI using command npm install -g @angular/CLI
+ 3.ng new <app_name>
+ 4.ng serve
+
+Package json - packages list. include dependancies and dev depedancies.
+Dev depedancies - local development.
+depedancies - prdocution.
+angular.json - project configration file.
+style.css - global CSS file.
+.gitignore - file folders execute from version control.
+tsconfig.json - typescript configration.
+index.html - main file loads angular.
+app.config.ts - app configration.
+main.ts - entry point of application.
+
+Components:
+Is a UI block or structure,when we create on component 
+ 1.ng generate component <component_name>
+ 2.ng g c <component>
+
+ 4 files are created - html css ts spec.ts testing file
+
+Data Binding - connect UI to Code.
+is a binding technique its connect UI to code.
+Types-
+    One Way - Interpolation - Show data from TS to HTML {{value}}
+              Property Binding - Bind HTML Property to TS variable [property] //home activity
+              Event Binding - Call function on event ()
+    
+    Two Way - 
+            [(ngModel)] = "value" sync data both ways TS -> HTML , HTML -> TS
+
+before angular 15 needs ng modules now days we are using angular 20+ version modules are optional you can use standlone fun you can now use standalone components.
+directives - like magic wands that can change your web page without rewriting it
+Types:
+    structural - ngif,ngfor
+    Attribute - ngstyle
+
+1.structural Directives:
+    Chnage the structure of your page. ngif ngfor ngswitch // home Activity 1:how to use it 
+
+1.Interpolation:
+    ex-<td>{{studData.name}}</td>
+
+2.Property binding:
+    [value]="showStudent?'Hide Student':'Show Student'"
+
+3.Event binding:
+    <form (ngSubmit) = "addStudent()">
+
+4.ngModal:
+    <input [(ngModel)]="name" name = "name" type="text" class="form-control" id="studentName" placeholder="Enter Student Name:">
+
+Q)How we can use if-else,for loop,switch in angular with exmple.
+
+ngIf:
+- Use *ngIf when you want to show or hide an element based on a condition (true/false).
+Best for simple conditions like login status, toggling UI, showing error messages.
+It removes/adds element from DOM, so good for performance when not needed.
+ex-
+<div *ngIf = "showStudent">
+<h5>Name:{{fname}}</h5>
+<h5>Age:{{age}}</h5>
+<h5>Course:{{course}}</h5>
+
+used to hide or show
+
+ngFor:
+- When to use *ngFor
+Use *ngFor when you want to loop through a list/array and display data.
+Best for repeating UI elements like lists, tables, cards (students, products, etc.).
+It creates a template for each item in the array dynamically.
+
+ex-
+<tbody>
+    <tr *ngFor = "let studData of studentList">
+        <td>{{studData.name}}</td>
+        <td>{{studData.age}}</td>
+        <td>{{studData.course}}</td>
+    </tr>
+  </tbody>
+used to display list like things.
+
+-ngswitch
+Use ngSwitch when you have multiple conditions (more than 2 cases).
+Cleaner than using many *ngIf statements.
+Best for handling different views based on one variable (like status, role, category).
+
+* Routing:
+    navigation btn one page to another page is called routing.
+
+Activity for Directives:
+    hide div for show and hide
+    toggl btn 
+    num1==num2 show color
+    div dropdown selected value displayed
+
+*Services:
+    is like a helper class it stores and share logic so many components can use instead of writing the same code again.
+
+Life Cycle Hooks
+ngOnInit - is hook its run automatically when page load.
+
+write 2 eaxmple services with angular. and learn more about dependancy injection
+
+#)Routing
+    Step 1:app.route.ts add routes path and component.
+    Step 2:app.ts RouterOutlet and RouterLink.
+    Step 3:app.html use routeroulet.

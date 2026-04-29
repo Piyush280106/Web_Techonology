@@ -1,0 +1,20 @@
+what is ORM-
+    instead of writing SQL queries uses js objects.
+    without ORM - select * from students;
+    with ORM - student.FindAll()
+
+Web Socekt- allows us real time communication.
+
+HTTP-> REQ -> RES
+<---- Web Socket ---->
+
+ex- chat apps like whats app.
+live stock price updates.
+online gaming.
+notification.
+
+installation:
+    npm install ws
+
+Activities:
+    deep study web socket understand ws with eaxmple

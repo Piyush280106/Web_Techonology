@@ -1,0 +1,248 @@
+{
+  "products": [
+    {
+      "id": "p2",
+      "name": "White Linen Shirt",
+      "price": 899,
+      "category": "Clothing",
+      "emoji": "👔",
+      "inStock": true
+    },
+    {
+      "id": "p3",
+      "name": "Floral Midi Skirt",
+      "price": 1199,
+      "category": "Clothing",
+      "emoji": "👗",
+      "inStock": true
+    },
+    {
+      "id": "p4",
+      "name": "Classic Black Tee",
+      "price": 499,
+      "category": "Clothing",
+      "emoji": "👕",
+      "inStock": true
+    },
+    {
+      "id": "p5",
+      "name": "Wireless Earbuds",
+      "price": 3499,
+      "category": "Electronics",
+      "emoji": "🎧",
+      "inStock": true
+    },
+    {
+      "id": "p6",
+      "name": "USB-C Power Bank",
+      "price": 1299,
+      "category": "Electronics",
+      "emoji": "🔋",
+      "inStock": true
+    },
+    {
+      "id": "p7",
+      "name": "Smart Watch",
+      "price": 8999,
+      "category": "Electronics",
+      "emoji": "⌚",
+      "inStock": true
+    },
+    {
+      "id": "p8",
+      "name": "Portable Speaker",
+      "price": 2199,
+      "category": "Electronics",
+      "emoji": "🔊",
+      "inStock": false
+    },
+    {
+      "id": "p9",
+      "name": "Organic Green Tea",
+      "price": 299,
+      "category": "Groceries",
+      "emoji": "🍵",
+      "inStock": true
+    },
+    {
+      "id": "p10",
+      "name": "Almond Trail Mix",
+      "price": 449,
+      "category": "Groceries",
+      "emoji": "🥜",
+      "inStock": true
+    },
+    {
+      "id": "p11",
+      "name": "Dark Chocolate Bar",
+      "price": 199,
+      "category": "Groceries",
+      "emoji": "🍫",
+      "inStock": true
+    },
+    {
+      "id": "p12",
+      "name": "Himalayan Pink Salt",
+      "price": 149,
+      "category": "Groceries",
+      "emoji": "🧂",
+      "inStock": true
+    },
+    {
+      "id": "p13",
+      "name": "Leather Wallet",
+      "price": 1099,
+      "category": "Accessories",
+      "emoji": "👜",
+      "inStock": true
+    },
+    {
+      "id": "p14",
+      "name": "Aviator Sunglasses",
+      "price": 1499,
+      "category": "Accessories",
+      "emoji": "🕶",
+      "inStock": true
+    },
+    {
+      "id": "p15",
+      "name": "Silver Stud Earrings",
+      "price": 699,
+      "category": "Accessories",
+      "emoji": "💍",
+      "inStock": true
+    },
+    {
+      "id": "p16",
+      "name": "Canvas Tote Bag",
+      "price": 399,
+      "category": "Accessories",
+      "emoji": "🛍",
+      "inStock": true
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": "ORD-MOBH0FS6IGY",
+      "items": [
+        {
+          "productId": "p6",
+          "name": "USB-C Power Bank",
+          "emoji": "🔋",
+          "price": 1299,
+          "qty": 1,
+          "lineTotal": 1299
+        },
+        {
+          "productId": "p1",
+          "name": "Blue Denim Jacket",
+          "emoji": "🧥",
+          "price": 1799,
+          "qty": 2,
+          "lineTotal": 3598
+        }
+      ],
+      "subtotal": 4897,
+      "discount": 0,
+      "cgst": 440.72999999999996,
+      "sgst": 440.72999999999996,
+      "total": 5778.459999999999,
+      "coupon": null,
+      "timestamp": "2026-04-23T12:41:28.039Z",
+      "status": "Pending"
+    },
+    {
+      "id": "ORD-MOBH1580ECG",
+      "items": [
+        {
+          "productId": "p9",
+          "name": "Organic Green Tea",
+          "emoji": "🍵",
+          "price": 299,
+          "qty": 1,
+          "lineTotal": 299
+        }
+      ],
+      "subtotal": 299,
+      "discount": 29.900000000000002,
+      "cgst": 24.219,
+      "sgst": 24.219,
+      "total": 317.538,
+      "coupon": "SAVE10",
+      "timestamp": "2026-04-23T12:42:01.008Z",
+      "status": "Completed"
+    },
+    {
+      "id": "ORD-MOK64QD9L4K",
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Blue Denim Jacket",
+          "emoji": "🧥",
+          "price": 1799,
+          "qty": 1,
+          "lineTotal": 1799
+        }
+      ],
+      "subtotal": 1799,
+      "discount": 0,
+      "cgst": 161.91,
+      "sgst": 161.91,
+      "total": 2122.82,
+      "coupon": null,
+      "timestamp": "2026-04-29T14:46:48.189Z",
+      "status": "Ready"
+    },
+    {
+      "id": "ORD-MOK66B4V86G",
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Classic Black Tee",
+          "emoji": "👕",
+          "price": 499,
+          "qty": 1,
+          "lineTotal": 499
+        },
+        {
+          "productId": "p7",
+          "name": "Smart Watch",
+          "emoji": "⌚",
+          "price": 8999,
+          "qty": 1,
+          "lineTotal": 8999
+        }
+      ],
+      "subtotal": 9498,
+      "discount": 0,
+      "cgst": 854.8199999999999,
+      "sgst": 854.8199999999999,
+      "total": 11207.64,
+      "coupon": null,
+      "timestamp": "2026-04-29T14:48:01.759Z",
+      "status": "Pending"
+    },
+    {
+      "id": "ORD-MOK66R91CHI",
+      "items": [
+        {
+          "productId": "p4",
+          "name": "Classic Black Tee",
+          "emoji": "👕",
+          "price": 499,
+          "qty": 1,
+          "lineTotal": 499
+        }
+      ],
+      "subtotal": 499,
+      "discount": 49.900000000000006,
+      "cgst": 40.419000000000004,
+      "sgst": 40.419000000000004,
+      "total": 529.938,
+      "coupon": "SAVE10",
+      "timestamp": "2026-04-29T14:48:22.645Z",
+      "status": "Pending"
+    }
+  ]
+}

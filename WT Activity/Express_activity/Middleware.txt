@@ -1,0 +1,64 @@
+1. Why use Middleware?
+--> Middleware = function between request and response.
+It can:
+Check authentication
+1.Validate data
+2.Logging
+3.Error handling
+
+Example:
+app.use((req,res,next)=>{
+console.log("Middleware running");
+next();
+});
+-- next() passes control ahead.
+
+2. Types of Middleware
+--> 
+1.Built-in
+Provided by Express.
+express.json()
+Converts JSON body.
+
+2.Application Middleware
+Works on whole app.
+app.use(...)
+
+3.Router Middleware
+Specific route only.
+router.use(...)
+
+4.Error Middleware
+Handles errors.
+app.use((err,req,res,next)=>{
+res.send("error");
+});
+
+5.Third-party Middleware
+External packages.
+Examples:
+CORS
+Morgan
+
+3. Benefits of Middleware
+-->
+Security
+Reusable code
+Cleaner code
+Logging
+Authentication
+Validation
+Instead of writing same code in every route.
+
+4.Where the middleware is used in company level ?
+-->
+Used in:
+Login auth
+JWT verification
+Role checking
+Request logging
+Rate limiting
+Error handling
+
+Example:
+app.use(authMiddleware)

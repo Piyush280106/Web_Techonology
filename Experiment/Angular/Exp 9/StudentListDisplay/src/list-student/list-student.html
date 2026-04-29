@@ -1,0 +1,43 @@
+<div class="container my-5">
+  <div class="card shadow-sm p-4">
+    
+    <h2 class="mb-4">Student Info</h2>
+
+    <div class="mb-4 p-3 border rounded bg-light">
+      <h4 class="mb-3">Add New Student</h4>
+      <div class="row g-2 mb-3">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Name" [(ngModel)]="newStudent.name">
+        </div>
+        <div class="col-md-4">
+          <input type="number" class="form-control" placeholder="Age" [(ngModel)]="newStudent.age">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Course" [(ngModel)]="newStudent.course">
+        </div>
+      </div>
+      <button class="btn btn-primary" (click)="addNewStudent()">Add Student</button>
+    </div>
+
+    <table class="table table-hover table-striped align-middle">
+      
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Course</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let stud of studentList">
+          <td>{{stud.name}}</td>
+          <td>{{stud.age}}</td>
+          <td>{{stud.course}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+</div>
